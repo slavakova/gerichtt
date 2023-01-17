@@ -1,0 +1,1013 @@
+html { scroll-behavior: smooth; }
+
+body{
+    
+    
+font-family: 'Cormorant Upright', serif;
+/*font-family: 'Open Sans', sans-serif;*/
+color:#fff;
+    
+background: #0C0B08;
+    
+    margin: 0;
+    padding: 0;
+
+}
+
+*,
+*:before,
+*:after
+{
+    box-sizing: border-box;
+}
+
+
+
+.conteiner{
+    max-width: 1330px;
+    
+    margin: 0 auto;
+    padding: 0 15px; 
+}
+
+/*Header ############################################*/
+
+.header{
+    
+    
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    
+}
+
+.header__conteiner{
+    max-width: 1730px;
+    
+    
+}
+
+.header__inner{
+    margin: 0 auto;
+    padding: 40px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    position: relative;
+}
+
+.header__logo{
+    text-decoration: none;
+    
+    
+    
+    color: #fff;
+    
+    text-align: start;
+    font-weight: 700;
+    font-size: 44px;
+    
+}
+
+.nav{
+    text-align: center;
+   flex-basis: 40%;
+}
+
+
+    
+    
+    
+}
+
+.active a{
+    display: block;
+    color: #0C0B08;
+    
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.active a:first-child{
+    font-size: 44px;
+    font-weight: 700;
+}
+
+.nav__link{
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    margin-right: 32px;
+}
+.nav__link:last-child{
+    margin-right: 0;
+}
+
+.header__log{
+    
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    
+    
+}
+.header__logIn{
+    
+}
+
+.header__wall{
+    margin: 0 20px;
+    display: inline-block;
+    content: "";
+    width: 1px;
+    height: 57px;
+   background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 58.85%, rgba(255, 255, 255, 0) 100%);
+
+}
+
+/*BURGER ############################################*/
+
+.burger{
+    display: none;
+    
+    font-size: 0;
+    width: 30px;
+    height: 20px;
+
+    
+    z-index: 100;
+    cursor: pointer;
+    
+}
+
+.burger span,
+.burger::before,
+.burger::after {
+    content: "";
+    
+    z-index: 1;
+
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    
+    margin-bottom: 5px;
+    
+}
+
+.burger__logo{
+    display: none;
+    
+    text-decoration: none;
+     color: #0C0B08;
+    
+    text-align: start;
+    font-weight: 700;
+    
+}
+
+/*Intro ############################################*/
+
+.intro{
+    
+    padding: 120px 0px 100px 0px;
+  
+    
+    background: url(../img/fon/malik-skydsgaard-jY9rX-E7ztU-unsplash%201.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    
+}
+
+.intro__conteiner{
+    max-width: 1730px;
+}
+
+.intro__content{
+    width: 100%;
+    
+    position: relative;
+    text-align: center;
+}
+
+.intro__heshtag{
+    position: absolute;
+    left: 10px;
+    top: -80px;
+    
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg) translateY(-100%);
+    
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    
+    
+}
+
+.intro__heshtag span{
+    margin-top: 40px;
+}
+
+
+
+.intro__scroll{
+    position: absolute;
+    bottom: -7%;
+    left: 50%;
+    
+    z-index: 100;
+}
+
+.intro__wall{
+    margin: 0 auto;
+    
+    display: block;
+    content: "";
+    background: #FFFFFF;
+    width: 1px;
+    height: 61px;
+
+}
+
+.intro__img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    
+    
+    border: 1px solid #DCCA87
+}
+
+.intro__title{
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    
+    font-weight: 700;
+    font-size: 181px;
+    color: #fff;
+    
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+}
+
+/*Reservation ############################################*/
+
+
+.reservation{
+    margin: 152px auto;
+    
+    
+    text-align: center;
+    background: #0C0C0C;
+    
+    
+}
+
+
+.reservation__inner {
+    width: 100%;
+    padding: 42px 0;
+    margin: 0 auto;
+
+    text-align: center;
+
+    background: #0C0C0C;
+    border: 1px solid #DCCA8733;
+}
+
+
+.menu__subtitle{
+    margin: 8px 0;
+    
+    font-weight: 700;
+    font-size: 23px;
+}
+
+.menu__title{
+    
+    
+    font-weight: 600;
+    font-size: 64px;
+    
+    line-height: 1.2;
+    color: #DCCA87;
+    
+    
+}
+
+.reservation__row{
+    margin: 64px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.reservation__col{
+    width: 30%;
+    padding: 16px;
+    border: 1px solid #F5EFDB;
+    
+    position: relative;
+    background: inherit;
+    
+    text-align: left;
+    
+    font-weight: 600;
+    font-size: 16px;
+    
+    color: #AAAAAA;
+}
+
+
+
+.reservation__col:after{
+    
+    content: "";
+    
+    position: absolute;
+    right: 16px;
+    bottom: 50%;
+    
+    width: 8px;
+    height: 8px;
+    
+    border-right:1px solid #AAAAAA;
+    border-bottom:1px solid #AAAAAA;
+    
+    transform: rotate(45deg);
+}
+
+
+
+.menu__btn{
+    
+    
+    padding: 8px 32px;
+    border: 1px solid #DCCA87;
+    background: #DCCA87;
+    
+    cursor: pointer;
+    
+    
+    font-weight: 700;
+    font-size: 16px;
+    
+    color: #0C0C0C;
+
+}
+
+
+/*About ############################################*/
+
+
+.about{
+    padding: 128px 0;
+    
+    background: url(../img/fon/malik-skydsgaard-jY9rX-E7ztU-unsplash%201.png);
+    background-size: cover;
+}
+
+
+.about__box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.about__img{
+    align-self: flex-end;
+}
+
+.about__img img{
+    max-width: 100%;
+    height: auto;
+}
+
+.about__info{
+    width: 48.7%;
+}
+
+.about__image{
+    margin-bottom: 40px;
+}
+
+.about__image img{
+    max-width: 100%;
+    height: auto;
+}
+
+.about__text{
+    width: 532px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    
+    color: #AAAAAA;
+    
+    margin-bottom: 32px;
+}
+
+/*Drinks ############################################*/
+
+.drinks{
+    margin: 152px 0;
+    
+    text-align: center;
+}
+
+.drinks__row{
+    margin-top: 62px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.drinks__col{
+    width: 30%;
+    
+    
+    margin-bottom: 10px;
+    margin-right: 10px;
+    
+    position: relative;
+}
+
+
+
+
+.drinks__img{
+    display: block;
+    
+    width: 100%;
+    height: auto;
+    
+   
+}
+
+.drinks__img:hover{
+    opacity: .5;
+}
+
+
+
+.drinks__title{
+    display: none;
+    font-weight: 600;
+    font-size: 45px;
+    
+    color: #fff;
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    
+    transform: translate(-50%, -50%);
+}
+
+.drinks__col:hover .drinks__title{
+    display: block;
+}
+
+.drinks__title p{
+    margin: 0;
+}
+
+/*Happy ############################################*/
+
+.happy{
+    padding: 330px 0;
+    
+    background-image: url(../img/Happy/rinck-content-studio-EbScFvDFhx0-unsplash.png) ;
+    background-size: cover;
+    background-position: center;
+    
+    text-align: center;
+}
+
+
+}
+.happy__header{
+    
+}
+
+.happy__title{
+
+    font-weight: 600;
+    font-size: 128px;
+    line-height: 1.8;
+    
+    color: #DCCA87;
+}
+
+.happy__subtitle{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.3;
+    
+    color: #fff;
+}
+
+
+/*menu ############################################*/
+
+
+.menu{
+    padding: 152px 0;
+    text-align: center;
+}
+
+.menu__row{
+    margin: 64px 0;
+    
+    display: flex;
+    justify-content: space-around;
+    
+    align-items: center;
+    
+}
+
+.menu__col{
+    width: 31.6%;
+}
+
+.menu__col img{
+    display: block;
+    
+    width: 100%;
+    height: auto;
+}
+
+.menu__headline{
+    font-weight: 600;
+    font-size: 45px;
+    
+    line-height: 1.3;
+    color: #fff;
+    
+    margin-bottom: 48px;
+    
+    
+}
+
+.menu__content{
+    text-align: left;
+    
+}
+
+.menu__box{
+    margin-bottom: 40px;
+}
+
+.menu__string{
+    display: flex;
+    
+    align-items: center;
+    
+}
+
+.menu__dish{
+    font-weight: 400;
+    font-size: 23px;
+    
+    line-height: 1.3;
+    color: #DCCA87;
+    
+    align-items: center;
+    
+}
+
+
+.menu__dish:after{
+    content: "";
+    display: inline-block;
+    width: 119px;
+    height: 1px;
+    vertical-align: middle;
+    
+    background: #fafafa;
+    
+    margin: 0 32px;
+    
+    align-self: center
+}
+
+.menu__price{
+    font-weight: 700;
+    font-size: 23px;
+    
+    height: 1.3em;
+    color: #fff;
+}
+
+.menu__compound{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    
+    line-height: 1.7;
+    color: #AAAAAA;
+}
+
+
+/*Contact ############################################*/
+
+.contact{
+    
+    padding: 128px 0;
+    
+    background: url(../img/fon/malik-skydsgaard-jY9rX-E7ztU-unsplash%201.png);
+    background-size: cover;
+}
+
+
+.contact__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    text-align: center;
+}
+
+.contact__info{
+    margin: 124px 0;
+}
+
+
+.contact__text{
+    margin: 64px 0;
+}
+
+.contact__headline{
+    margin-bottom: 32px;
+    
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    
+    line-height: 1.7;
+    color: #AAAAAA;
+}
+
+.contact__head{
+    font-weight: 700;
+    font-size: 23px;
+    
+    line-height: 1.3;
+    color: #DCCA87;
+}
+
+.contact__timetable{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    
+    line-height: 1.7;
+    color: #fff;
+}
+
+.contact__img{
+    padding: 24px;
+    margin: 0 auto;
+    
+    position: relative;
+}
+
+.contact__img:before{
+    content: "";
+    display: block;
+    
+    width: 435px;
+    height: 435px;
+    
+    border-bottom: 24px solid #DCCA87;
+    border-left: 24px solid #DCCA87;
+    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+.contact__img:after{
+    content: "";
+    display: block;
+    
+    width: 435px;
+    height: 435px;
+    
+    border-right: 24px solid #DCCA87;
+    border-top: 24px solid #DCCA87;
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.contact__image{
+    display: block;
+
+}
+
+/*Footer ############################################*/
+
+.footer{
+    background: url(../img/fon/malik-skydsgaard-jY9rX-E7ztU-unsplash%201.png);
+    background-size: cover;
+    
+    margin-top: 272px;
+    text-align: center;
+}
+
+.footer__content{
+    position: relative;
+    
+    padding: 450px 0 128px 0;
+}
+
+.footer__subscribe{
+    position: absolute;
+    top: -150px;
+    left: 50%;
+    
+    transform: translateX(-50%);
+    
+    padding: 64px 215px;
+    
+    background: linear-gradient(0deg, #0C0C0C, #0C0C0C),
+    linear-gradient(0deg, rgba(220, 202, 135, 0.2), rgba(220, 202, 135, 0.2));
+
+}
+
+.footer__suptitle{
+    margin: 24px 0 64px 0;
+    
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    
+    line-height: 1.7;
+    color: #FFF;
+}
+
+.footer__input{
+
+    padding: 16px 501px 16px 18px;
+    
+    border: 1px solid #F5EFDB;
+    background-color: #0C0C0C;
+    
+   
+    
+    margin-bottom: 40px;
+}
+
+.footer__input::placeholder{
+    font-weight: 600;
+    font-size: 14px;
+    
+    line-height: 1.7;
+    color: #AAAAAA;
+}
+
+.footer__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__col{
+    width: 30%;
+}
+
+.footer__title{
+    font-weight: 400;
+    font-size: 32px;
+    
+    line-height: 1.3;
+    color: #F5EFDB;
+    
+    margin-bottom: 24px;
+
+}
+
+
+.footer__text{
+    
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    
+    line-height: 1.7;
+    color: #AAAAAA;
+}
+
+.footer__text a{
+    text-decoration: none;
+    color: #AAAAAA;
+}
+
+
+.footer__headline{
+    font-weight: 700;
+    font-size: 64px;
+    
+    line-height: 1.4;
+    color:#DCCA87;
+    
+    text-transform: uppercase;
+    
+    margin-bottom: 32px;
+}
+
+.footer__info{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    
+    line-height: 1.7;
+    color: #FFF;
+    
+    margin-bottom: 16px;
+}
+
+.footer__social{
+    margin-top: 16px;
+}
+
+.footer__social i{
+    margin-right: 16px;
+    
+}
+
+.footer__social i:last-child{
+    margin-right: 0;
+}
+
+
+.footer__copyright{
+    margin-top: 64px;
+    
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    
+    line-height: 1.7;
+    color: #AAAAAA;
+}
+
+
+
+
+/*media ############################################*/
+
+
+@media (max-width: 1920px){
+    
+}
+
+@media (max-width: 1280px){
+    
+/*  intro  */
+    
+.intro__title{
+        font-size: 140px;
+}
+
+
+/*  about  */
+
+.about{
+    text-align: center;
+}
+
+    .menu__col{
+        text-align: center;
+    }    
+    
+.about__img img{
+    display: none;
+}
+
+.about__info{
+    width: 100%;
+}
+
+/*Contact*/
+    
+    .contact{
+        padding: 0;
+    }
+    
+    .contact__info{
+    width: 100%;
+}
+/*    Footer*/
+    
+    
+    .footer__input{
+
+    padding: 16px 280px 16px 18px;
+        
+        
+    
+}
+
+@media (max-width: 991px){
+    
+/*    Burger*/
+    
+    .nav{
+display: none
+    }
+    
+.burger{
+      display: block;
+ }
+    
+    burger__active{
+    display: none;
+    padding: 50px;
+    
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background: #fff;
+    
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+    width: 100%;
+    }
+    
+    
+    
+    /*  about  */
+.about__text{
+    
+    width: 100%;
+} 
+    
+    
+    /*  drinks*/
+    
+.drinks__row{
+    justify-content: space-between;
+}
+    
+.drinks__col{
+    width: 47%;
+    
+}
+  /*menu*/
+    
+.menu__col{
+    width: 45%;
+}
+
+.menu__col img{
+    display: none;
+    
+}
+/*    Footer*/
+    
+    .footer__social{
+    font-size: 40px;
+}
+    
+}
+
+@media (max-width: 540px){
+/*  about  */
+    
+.about__text{
+    
+    margin: 40px 0;
+    
+    font-size: 12px;
+}
+ 
+    
+
+    
+    
+    
+}
